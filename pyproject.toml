@@ -1,0 +1,17 @@
+[build-system]
+requires = [
+    "setuptools>=42",
+    "wheel"
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ontoloader"
+version = "0.1.0"
+dependencies = [
+    "spacy==3.5.0",
+    "coreferee==1.4.1",
+    "en-core-web-lg @ https://github.com/explosion/spacy-models/releases/download/en_core_web_lg-3.5.0/en_core_web_lg-3.5.0-py3-none-any.whl",
+    "coreferee-model-en @ https://github.com/explosion/coreferee/raw/master/models/coreferee_model_en.zip"
+]
+
